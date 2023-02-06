@@ -1,0 +1,69 @@
+.item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+}
+.history-data {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.dltIcon {
+  align-items: center;
+}
+.time {
+  color: #64748b;
+  font-size: 13px;
+  margin-right: 23px;
+}
+.history-item-logo {
+  height: 20px;
+  margin-right: 10px;
+}
+.heading {
+  font-size: 12px;
+}
+.domainUrl {
+  font-size: 12px;
+  color: #64748b;
+  margin-left: 10px;
+}
+.dlt-icon-btn {
+  background-color: transparent;
+  border-width: 0px;
+  cursor: pointer;
+}
+.dlt-icon {
+  height: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    height: 70px;
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+  .time {
+    margin-bottom: 12px;
+  }
+  .history-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .domainUrl {
+    margin: 0px;
+  }
+  .dlt-icon-btn {
+    width: 50px;
+    margin-left: 1px;
+  }
+}
